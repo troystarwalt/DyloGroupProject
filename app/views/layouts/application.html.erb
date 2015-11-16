@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DyloGroupPorject</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Dylo Design</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
+
+<style>
+	body{
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+
+	.captionbox{
+		display:block;
+		background-color:#7DAE22;
+		padding: 17px;
+		color:white;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		margin:0;
+		margin-left:-20px;
+		max-width:1070px;
+		text-align:center;
+	}
+</style>
+
 <body>
 
-<%= yield %>
+<ul class="nav navbar-nav">
+  <li><%= image_tag "logo.png", width:"267", height:"50" %></li>
+  <li><a href="#OurWork">Our Work</a></li>
+  <li><a href="#OurHistory">History</a></li>
+  <li><a href="#OurMission">About Us</a></li>
+  <li><a href="#Contact">Contact</a></li>
+  <li><a href="DyloLogin.html">Login</a></li>
+</ul>
 
-</body>
-</html>
+
+	<%= yield %>
+
+
+
+	<div class="col-lg-12">
+      <h1 class="captionbox"><a name="Contact"></a>Talk to Us!</h1>
+
+      <br>
+    </div>
+
+	<div>
+		<form name="form1" method="post" action="">
+				<br>
+			<table width="792" border="0">
+				<tr>
+					<td width="362">Full Client Name:</td>
+					<td width="420"><input type="text" name="textfield5" id="textfield5"></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="textfield7" id="textfield6"></td>
+				</tr>
+				<tr>
+					<td>Address (so we can mail you a brochure):</td>
+					<td><input type="text" name="textfield3" id="textfield3"></td>
+				</tr>
+				<tr>
+					<td>City:</td>
+					<td><input type="text" name="textfield2" id="textfield2"></td>
+				</tr>
+				<tr>
+					<td>State:</td>
+					<td><input type="text" name="textfield6" id="textfield7"></td>
+				</tr>
+				<tr>
+					<td>Phone Number:</td>
+					<td><input type="text" name="textfield" id="textfield"></td>
+				</tr>
+			</table>
+			<br>
+			<p>
+				<input type="submit" name="button" id="button" value="Submit"></p></form>
+				<br>
+				<br>
+			</div>
+
+		</body>
+		</html>
