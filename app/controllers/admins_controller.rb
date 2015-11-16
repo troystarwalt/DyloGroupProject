@@ -8,7 +8,11 @@ class AdminsController < ApplicationController
   end
 
   def destroy
-  	@user.find(params[:id])
-  	@user.destroy
+  	@user = User.find(params[:id])
+  	@user= User.destroy
   end
+
+  
+
+
 end
