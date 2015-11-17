@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   get '/', to: "homes#index"
 
-  
+  get '/building', to: "homes#building"
 
  
 end
