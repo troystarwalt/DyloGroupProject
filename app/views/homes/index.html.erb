@@ -5,45 +5,45 @@
 </script>
 
 <script>
-$(document).ready(function(){
+  $(document).ready(function(){
     $(".projecttext").hover(function(){
-        $(this).animate({fontSize: "3em"});
-        }, function(){
-        $(this).animate({fontSize: "2em"});
+      $(this).animate({fontSize: "3em"});
+    }, function(){
+      $(this).animate({fontSize: "2em"});
     });
-});
+  });
 </script>
 
-<div class="col-lg-12">
-  <div>
-    <div class="carousel-caption">
-      <h2 id="catchphrase1" class="text-left" style="margin-top:-250px; display:none">If we build it, they'll come, and stay.</h2>
+  <div class="col-lg-12">
+    <div>
+      <div class="carousel-caption">
+        <h2 id="catchphrase1" class="text-left" style="margin-top:-250px; display:none">If we build it, they'll come, and stay.</h2>
+      </div>
+    </div>
+
+    <div>
+    <%= image_tag "sky13.jpg", style:"width:1070", height:"467" %>
+      <h1 class="captionbox">The Premiere Architecture Firm of the 21st Century</h1>
     </div>
   </div>
 
-  <div>
-    <%= image_tag "sky13.jpg", style:"margin-left:-20px", width:"1070", height:"467", class:"img-responsive" %>
-    <h1 class="captionbox">The Premiere Architecture Firm of the 21st Century</h1>
-  </div>
-</div>
+  <!--  End Beginning -->
 
-<!--  End Beginning -->
+  <!--  Start Work 0 -->
 
-<!--  Start Work 0 -->
-
-<div class="col-lg-11" style="margin-left:-26px">
- <div class="col-lg-6" style="margin-left:-20px">
-   <div class="carousel-caption">
-    <h2 class="projecttext">The Crystal Buildings</h2>
+  <div class="col-lg-12">
+   <div class="col-lg-6">
+     <div class="carousel-caption">
+      <h2 class="projecttext">The Crystal Buildings</h2>
+    </div>
+    <%= image_tag "sky15.jpg", class:"img-responsive" %>
   </div>
-  <%= image_tag "sky15.jpg", class:"img-responsive" %>
-</div>
-<div class="col-lg-6" style="margin-left:-17px">
-  <div class="carousel-caption">
-    <h2 class="projecttext">The Curves of Rome</h2>
+  <div class="col-lg-6">
+    <div class="carousel-caption">
+      <h2 class="projecttext">The Curves of Rome</h2>
+    </div>
+    <%= image_tag "sky8.jpg", class:"img-responsive" %>
   </div>
-  <%= image_tag "sky8.jpg", class:"img-responsive" %>
-</div>
 </div>
 
 <!--  End Work 0 -->
@@ -54,9 +54,7 @@ $(document).ready(function(){
   <h1 class="captionbox"><a name="OurWork"></a>Our Work</h1>
 </div>
 
-<div class="col-lg-12">
-
-  <div class="col-lg-5" style="padding:25px">
+<div class="col-lg-6" style="padding:25px">
     <ul>
       <h2>
         <li>Westley Bank HQ</li>
@@ -68,19 +66,18 @@ $(document).ready(function(){
     </ul>
   </div>
 
-  <div class="col-lg-5" style="padding:25px">
+  <div class="col-lg-6" style="padding:25px">
     <ul>
       <h2>
         <li>Margrine Building</li>
         <li>Aslabaster House</li>
         <li>McDarcely HQ</li>
         <li>Burning House Bar</li>
-        <li>The Alam Architectural Museum</li>
+        <li>Alam Architectural Museum</li>
       </h2>
     </ul>
   </div>
 
-</div>
 
 <!--  End Work 1 -->
 
@@ -120,14 +117,14 @@ $(document).ready(function(){
   </div>
 
   <div class="col-lg-12">
-    <div class="col-lg-5">
+    <div class="col-lg-6">
       <%= image_tag "sky4.jpg", class:"img-responsive" %>
       <div class="carousel-caption">
         <h2 class="projecttext">The Ship of the Sky</h2>
       </div>
     </div>
 
-    <div class="col-lg-5">
+    <div class="col-lg-6">
       <%= image_tag "sky14.jpg", class:"img-responsive" %>
       <div class="carousel-caption">
         <h2 class="projecttext">Haley Insitute</h2>
@@ -135,21 +132,21 @@ $(document).ready(function(){
     </div>
   </div>
 
-  <div class="col-lg-10">
+  <div class="col-lg-12">
     <h2 style="text-align:center">This firm prides itself on:<br>
       Integrity, Awesome Design, High Buildings…<br>
       And great people relations.</h2>
     </div>
 
     <div class="col-lg-12">
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <%= image_tag "sky9.jpg", class:"img-responsive" %>
         <div class="carousel-caption">
           <h2 class="projecttext">The SkyTower of Minos</h2>
         </div>
       </div>
 
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <%= image_tag "sky1.jpg", class:"img-responsive" %>
         <div class="carousel-caption">
           <h2 class="projecttext">Alam Architectural Museum</h2>
@@ -178,3 +175,4 @@ $(document).ready(function(){
       </ul> 
       <br>
     </div>
+
