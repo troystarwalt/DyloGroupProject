@@ -30,7 +30,7 @@
 </style>
 
 <body>
-
+<div class="container">
 
 		<ul class="nav navbar-nav">
 			<li><%= image_tag "logo.png", width:"267", height:"50" %></li>
@@ -40,10 +40,10 @@
 			<li><a href="#Contact">Contact</a></li>
 			<li><a href="DyloLogin.html">Login</a></li>
 		</ul>
-<div class="container">
+
 
 		<%= yield %>
-  </div>
+
 
 	<ul class="nav navbar-nav">
 		<li><%= link_to image_tag("logo.png", class: "img-repsonsive"), "/" %></li>
@@ -54,6 +54,6 @@
 		<li><a href="/building">Dylo Kids Corner</a></li>
 		<li><a href="DyloLogin.html">Login</a></li> <!--To be hidden when not an admin -->
 	</ul>
-
+  </div>
 </body>
 </html>
