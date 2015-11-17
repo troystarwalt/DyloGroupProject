@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Dylo Design</title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -33,17 +33,18 @@
 
 <body>
 
-		<ul class="nav navbar-nav">
-			<li><%= image_tag "logo.png", width:"267", height:"50" %></li>
-			<li><a href="#OurWork">Our Work</a></li>
-			<li><a href="#OurHistory">History</a></li>
-			<li><a href="#OurMission">About Us</a></li>
-			<li><a href="#Contact">Contact</a></li>
-			<li><a href="DyloLogin.html">Login</a></li>
-		</ul>
+	<ul class="nav navbar-nav">
+	<li><%= link_to image_tag("logo.png", class: "img-repsonsive"), "/" %></li>
+		<li><a href="/#OurWork">Our Work</a></li>
+		<li><a href="/#OurHistory">History</a></li>
+		<li><a href="/#OurMission">About Us</a></li>
+		<li><a href="/#Contact">Contact</a></li>
+		<li><a href="/building">Dylo Kids Corner</a></li>
+		<li><a href="DyloLogin.html">Login</a></li> <!--To be hidden when not an admin -->
+	</ul>
 
 
-		<%= yield %>
+	<%= yield %>
 
 
 </body>
