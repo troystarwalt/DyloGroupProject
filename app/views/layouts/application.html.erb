@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DyloGroupPorject</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Dylo Design</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Include lazylinepainter -->
+	<script src="../jquery.lazylinepainter-1.7.0.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
+
+<style>
+	body{
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+
+	.captionbox{
+		display:block;
+		background-color:#7DAE22;
+		padding: 17px;
+		color:white;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		margin:0;
+		margin-left:-20px;
+		max-width:1070px;
+		text-align:center;
+	}
+</style>
+
 <body>
 
-<%= yield %>
+		<ul class="nav navbar-nav">
+			<li><%= image_tag "logo.png", width:"267", height:"50" %></li>
+			<li><a href="#OurWork">Our Work</a></li>
+			<li><a href="#OurHistory">History</a></li>
+			<li><a href="#OurMission">About Us</a></li>
+			<li><a href="#Contact">Contact</a></li>
+			<li><a href="DyloLogin.html">Login</a></li>
+		</ul>
+
+
+		<%= yield %>
+
 
 </body>
 </html>
