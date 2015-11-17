@@ -13,17 +13,17 @@
 * An admin model for admins to see user forms and information
 * An interactive (basic) tool for kids to build their own projects
 
-###Authors
+### Authors
 * Justin Bardliving
 * Troy Starwalt
 * Tristan Villanueva 
 
-###To Fork
+### To Fork
 * Bundle Install
 * rake db:migrate
 * Have internet
 
-####To Do List
+#### To Do List
 * Main Page 
 	* Check 1000px resizing (photos)
 	* Fix navigation at 1000px
@@ -56,3 +56,4 @@
 	* Portfolio for Each Picture
 	* Additional javascript animations on page loads
 	* Check all resolusions aand media sizes
+	* Look into adding images as draggable
