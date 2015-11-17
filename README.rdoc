@@ -22,3 +22,37 @@
 * Bundle Install
 * rake db:migrate
 * Have internet
+
+####To Do List
+* Main Page 
+	* Check 1000px resizing (photos)
+	* Fix navigation at 1000px
+	* Contact Page Link to Form at Bottom
+	* Make history one text size.
+	* Fix Nav Links to sit in line
+
+* Admin Login
+	* Add route
+	* Add form
+	* Upon logging, set with Admin privledges
+	* Remove that link (admins login through a different portal)
+
+* Admin Pages
+	* View users model information
+	* Delete and edit users
+
+* User Pages
+	* Add user contact form
+	* Submitting the form will enter info into uses model
+	* Incorporate mandrill into form
+
+* Building
+	* Add additional shapes
+	* Update styling
+	* Paragraph explaing what the shit is
+	* Javascript pop up for key
+
+* Wish List
+	* Portfolio for Each Picture
+	* Additional javascript animations on page loads
+	* Check all resolusions aand media sizes

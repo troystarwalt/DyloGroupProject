@@ -1,3 +1,133 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	zoom: 1;
+}
+
+#toy-chest {
+	background-color: #a7f4fe;
+	height: 602px;
+
+	.toy-description {
+		text-align: center;
+	}
+
+}
+
+.draggable {
+	margin-left: 5px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#short-line-1, #short-line-2,#short-line-3, #short-line-4, #short-line-5, #short-line-6, #short-line-7 {
+	height: 100px;
+	width: 2px;
+	background-color: blue;
+	margin: 0 1px;
+	display: inline-block;
+    @translate(0px, 0px);
+}
+
+#medium-line-1, #medium-line-2,#medium-line-3, #medium-line-4, #medium-line-5, #medium-line-6, #medium-line-7 {
+	height: 150px;
+	width: 2px;
+	background-color: blue;
+	margin: 0 1px;
+	display: inline-block;
+	@translate(0px, 0px);
+}
+
+#long-line-1, #long-line-2,#long-line-3, #long-line-4, #long-line-5, #long-line-6, #long-line-7{
+	height: 200px;
+	width: 2px;
+	background-color: blue;
+	margin: 0 1px;
+	display: inline-block;
+	@translate(0px, 0px);
+}
+
+#short-line-7, #medium-line-7 {
+	margin-right: 10px;
+}
+
+#short-line-1 {
+	margin-left: 10px;
+}
+
+#square-1, #square-2, #square-3, #square-4, #square-5, #square-6 {
+	height: 50px;
+	width: 50px;
+	border: 2px blue solid;
+	display: inline-block;
+	@translate(0px, 0px);
+}
+
+#circle-1, #circle-2, #circle-3, #circle-4, #circle-5, #circle-6 {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 2px blue solid;
+	display: inline-block;
+    @translate(0px, 0px);
+}
+
+@-webkit-keyframes dropped {
+	0% {
+		background-color: blue;
+		opacity: 1;
+	}
+
+	50% {
+		background-color: blue;
+		opacity: .5;
+	}
+
+	100% {
+		background-color: blue;
+		opacity: .1;
+	}
+}
+
+.dropped {
+	-webkit-animation-name: dropped ;
+	-webkit-animation-duration: 500ms;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in-out;
+	position: absolute;
+}
+
+#parents {
+	background-color: white;
+	height: 600px;
+	border: 1px dashed grey;
+	z-index: -2;
+}
+
+.build-here {
+	text-align: center;
+}
+
+#playground  {
+	background-color: grey;
+	height: 500px;
+	z-index: -1;
+}
+
+.drop-target {
+	background-color: grey;
+	opacity: .5;
+}
