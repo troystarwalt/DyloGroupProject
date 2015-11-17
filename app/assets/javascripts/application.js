@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require interact.js
+//= require fulleffect.js
 //= require_tree .
