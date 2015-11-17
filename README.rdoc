@@ -1,28 +1,24 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Dylo Design Group Project for NYCDA September  
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+### Purpose of Application
+* A modern design approach for an architecual design firm
+* A simple and intuitive way for potential clients to contact the firm
+* A users model to collect user forms
+* Users will receive an email confirmation
+* Admins will receive an email as well
+* An admin model for admins to see user forms and information
+* An interactive (basic) tool for kids to build their own projects
+
+###Authors
+* Justin Bardliving
+* Troy Starwalt
+* Tristan Villanueva 
+
+###To Fork
+* Bundle Install
+* rake db:migrate
+* Have internet

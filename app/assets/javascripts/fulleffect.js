@@ -53,10 +53,35 @@ interact('.draggable')
 		// target.textContent = Math.round(event.rect.width) + 'x' + Math.round(event.rect.height);	
 	});
 
+interact('.drag-noresize')
+	.draggable({
+	    // enable inertial throwing
+	    inertia: true,
+	    // keep the element within the area of it's parent
+	    restrict: {
+	    	restriction: "#building",
+	    	endOnly: true,
+	    	elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+	    },
+	    // enable autoScroll
+	    autoScroll: true,
+
+	    // call this function on every dragmove event
+	    onmove: dragMoveListener,
+
+        snap: {
+	    	targets: [
+	    	interact.createSnapGrid({x: 30, y: 30})
+	    	],
+	    	range: Infinity,
+	    	relativePoints: [ {x: 0, y: 0}]
+    	}
+	});
+
 interact('.dropzone').dropzone({
 // Telling the drop zone to only 
 //allow draggable classes
-	accept: '.draggable',
+	accept: '.draggable, .drag-noresize',
 	overlap: 'pointer' || 'center' || zeroToOne,
 
 // As the item is picked up, a class of 
