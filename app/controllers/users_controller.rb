@@ -16,17 +16,19 @@ class UsersController < ApplicationController
   end
 
   def create 
+    @user = User.new
     if @user.save
-        redirect_to @user
+        redirect_to '/', notice: "We will get to you shortly"
       else
         render :new
 
 
+    end
   end
 
   def update
      
 
-    end
   end
 end
+

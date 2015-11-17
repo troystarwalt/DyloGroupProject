@@ -1,1 +1,12 @@
 
+<p> edit your form </p>
+<p><%= form_for @user do |f| %></p>
+	<p><%= f.label :fname," First name" %></p>
+	<p><%= f.text_field :fname%></p>
+	<p><%= f.label :lname, "Last name" %></p>
+	<p><%= f.text_field :lname %></p>
+	<p><%= f.label :email %></p>
+	<p><%= f.email_field :email%></p>
+	<p><%= f.label :content %>
+	<p><%= f.text_field :content %> </p>
+

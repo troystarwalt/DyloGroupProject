@@ -6,8 +6,10 @@
 	<p><%= f.text_field :lname %></p>
 	<p><%= f.label :email %></p>
 	<p><%= f.email_field :email%></p>
-	<p><%= f.label :content
+	<p><%= f.label :content %> </p>
 	<p><%= f.text_field :content %> </p>
+	<p><%= f.label :pnum, "Phone number" %></p>
+	<p><%= telephone_field(:user, :pnum) %></p>
 
 <%= f.submit "submit your info here" %>
 <%end%>
