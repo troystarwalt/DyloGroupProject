@@ -1,17 +1,22 @@
-<h1>Request a Quote</h1>
-
-<%= form_for @user, :html => {:class => 'form-horizontal'} do |f| %>
-<div class="form-group">
-	<p><%= f.label :fname," First Name" %></p>
-	<p><%= f.text_field :fname%></p>
-	<p><%= f.label :lname, "Last Name" %></p>
-	<p><%= f.text_field :lname %></p>
-	<p><%= f.label :email %></p>
-	<p><%= f.email_field :email%></p>
-	<p><%= f.label :content %> </p>
-	<p><%= f.text_area :content %> </p>
-	<p><%= f.label :pnum, "Phone Number" %></p>
-	<p><%= telephone_field(:user, :pnum) %></p>
-	<%= f.submit "Submit", class: "btn btn-default"%>
+<div class="row">
+	<div class="col-lg-6">
+		<p class="lead">Request a Quote</p>
+		
+		<div class="form-group">
+			<%= form_for @user, :html => {:class => 'form-horizontal'} do |f| %>
+			<p><%= f.label :fname," First Name" %></p>
+			<p><%= f.text_field :fname%></p>
+			<p><%= f.label :lname, "Last Name" %></p>
+			<p><%= f.text_field :lname %></p>
+			<p><%= f.label :email %></p>
+			<p><%= f.email_field :email%></p>
+			<p><%= f.label :content %> </p>
+			<p><%= f.text_area :content %> </p>
+			<p><%= f.label :pnum, "Phone Number" %></p>
+			<p><%= telephone_field(:user, :pnum) %></p>
+			<%= f.submit "Submit", class: "btn btn-default"%>
+			<%end%>
+		</div>
+		
+	</div>
 </div>
-<%end%>

@@ -16,6 +16,7 @@
 
  body{
  	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ 	padding-top: 50px;
  }
 
  .captionbox{
@@ -39,19 +40,19 @@
  	text-align:center;
  }
 
- .menuli{
+/* .menuli{
  	color: black; 
- }
+ }*/
 
  .footerbox a{
  	color: white;
  }
 
 
- .img-repsonsive{
+/* .img-repsonsive{
  	width: 267px;
  	height: 50px;
- }
+ }*/
 
  .portpoint{
  	list-style-type: none;
@@ -88,12 +89,12 @@
  		background-color: #7BAD37;
  	}
 
- 	.menuli{
+/* 	.menuli{
  		margin-right: 5px;
  		padding-left: 15px;
  		margin-top: 11px;
  		color: black; 
- 	}
+ 	}*/
 
  	#catchphrase1{
  		font-size: 80px;
@@ -106,9 +107,9 @@
 
  	}
 
- 	.menuli{
+/* 	.menuli{
  		color: black; 
- 	}
+ 	}*/
 
  	#catchphrase1{
  		font-size: 40px;
@@ -124,6 +125,7 @@
  	#catchphrase1{
  		font-size: 20px;
  	}
+
  }
 
  @media all and (max-width: 767px){
