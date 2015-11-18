@@ -26,10 +26,10 @@
 #### To Do List
 * Main Page 
 	* Check 1000px resizing (photos)
-	V Fix navigation at 1000px
-	V Contact Page Link to Form at Bottom (button to redirect to contact form)
-	V Make history one text size.
-	V Fix Nav Links to sit in line
+	* Fix navigation at 1000px [x]
+	* Contact Page Link to Form at Bottom (button to redirect to contact form) [x]
+	* Make history one text size. [x]
+	* Fix Nav Links to sit in line [x]
 
 * Admin Login
 	* Add route
@@ -38,12 +38,12 @@
 	V Remove that link (admins login through a different portal)
 
 * Admin Pages
-	* View users model information
+	* View users model information [x]
 	* Delete and edit users
 
 * User Pages
-	V Add user contact form
-	V Submitting the form will enter info into uses model
+	* Add user contact form [x]
+	* Submitting the form will enter info into uses model [x]
 	* Incorporate mandrill into form
 
 * Building
@@ -55,7 +55,7 @@
 * Wish List
 	* Portfolio for Each Picture
 	* Additional javascript animations on page loads
-	* Check all resolusions aand media sizes
+	* Check all resolutions aand media sizes
 	* Look into adding images as draggable
 
 ### * Thank you's
