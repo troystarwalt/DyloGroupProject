@@ -32,33 +32,34 @@
 	* [x] Fix Nav Links to sit in line
 
 * Admin Login
-	* Add route 
-	* Add form 
-	* Upon logging, set with Admin privledges 
+	* [ ] Add route 
+	* [ ] Add form 
+	* [ ] Upon logging, set with Admin privledges 
 	* [x] Remove that link (admins login through a different portal) 
 
 * Admin Pages
 	* [x] View users model information  
-	* Delete and edit users  
+	* [x]Delete and edit users  
 
 * User Pages
 	* [x] Add user contact form 
 	* [x] Submitting the form will enter info into uses model 
-	* Incorporate mandrill into form
+	* [x]Incorporate mandrill into form
 
 * Building
-	* Add additional shapes
-	* Update styling
-	* Paragraph explaing what the shit is
-	* Javascript pop up for key
+	* [] Add additional shapes
+	* [] Update styling
+	* [x] Paragraph explaing what the shit is
+	* [] Javascript pop up for key
 
 * Wish List
-	* Portfolio for Each Picture
-	* Additional javascript animations on page loads
-	* Check all resolutions aand media sizes
-	* Look into adding images as draggable
+	* [] Portfolio for Each Picture
+	* [] Additional javascript animations on page loads
+	* [] Check all resolutions aand media sizes
+	* [] Look into adding images as draggable
 
 ###Thank you's
 * Great Resources
 	* http://glyphicons.com/
 	* Interact.js
+	* Bootstrap

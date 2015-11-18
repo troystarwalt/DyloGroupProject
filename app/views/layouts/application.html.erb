@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dylo Design</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -12,45 +13,56 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Navigate</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<%= link_to image_tag("logo.png", class: "navbar-brand img-responsive"), "/" %>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="menuli"><a href="/#OurWork">Our Work</a></li>
+					<li class="menuli"><a href="/#OurHistory">History</a></li>
+					<li class="menuli"><a href="/#OurMission">About Us</a></li>
+					<li class="menuli"><a href="/#Contact">Contact</a></li>
+					<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
+					<li><%= link_to "See Users", users_path, :class => "menuli" %></li>
+				</ul>
+			</div>
+		</div>		
+	</nav>
 	<div class="container">
-		<nav class="navbar">
-			<ul class="nav navbar-nav">
-				<li id="menulogo"><%= link_to image_tag("logo.png", class: "img-repsonsive"), "/" %></li>
-				<li class="menuli"><a href="/#OurWork">Our Work</a></li>
-				<li class="menuli"><a href="/#OurHistory">History</a></li>
-				<li class="menuli"><a href="/#OurMission">About Us</a></li>
-				<li class="menuli"><a href="/#Contact">Contact</a></li>
-				<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
-				<li><%= link_to "See Users", users_path, :class => "menuli" %></li>
-			</ul>
 
-		</nav>
+	<%= yield %>
 
-		<%= yield %>
+	<div class="row">
+		<div class="footerbox">
+			<div class="col-lg-3">
+				<h1>Site Map</h1>
+				<br>
+			</div>
 
-		<div class="row">
-			<div class="footerbox">
+			<div class="col-lg-9">
 				<div class="col-lg-3">
-					<h1>Site Map</h1>
-					<br>
+					<p><a href="/#OurWork">Our Work</a></p>
+					<p><a href="/#OurHistory">History</a></p>
+					<p><a href="/#OurMission">About Us</a></p>
 				</div>
 
-				<div class="col-lg-9">
-					<div class="col-lg-3">
-						<p><a href="/#OurWork">Our Work</a></p>
-						<p><a href="/#OurHistory">History</a></p>
-						<p><a href="/#OurMission">About Us</a></p>
-					</div>
-
-					<div class="col-lg-6">
-						<p><a href="/contact_us">Contact</a></p>
-						<p><a href="/building">Kids Corner</a></p>
-						<p><a href="##">Admin Login</a></p>
-					</div>
+				<div class="col-lg-6">
+					<p><a href="/contact_us">Contact</a></p>
+					<p><a href="/building">Kids Corner</a></p>
+					<p><a href="##">Admin Login</a></p>
 				</div>
 			</div>
-			<h4>&copy 2015, Marissa Sanders</h4>
 		</div>
+		<h4>&copy 2015, Marissa Sanders</h4>
 	</div>
+</div>
 </body>
 </html>
