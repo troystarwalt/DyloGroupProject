@@ -1,16 +1,10 @@
 class AdminMailer < ActionMailer::Base
   default from: "no-reply@dylodesigns.com"
   default to: "troy.starwalt@gmail.com"
-  helper_method :time_format
 
   def new_user(user)
   	@user = user
   	mail(subject: "New User: #{user.email}")
-  end
-
-  def time_format
-  	time = Time.now
-  	showtime = time.to_formatted_s(:long)
   end
 
 end
