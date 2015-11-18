@@ -39,6 +39,10 @@
  	text-align:center;
  }
 
+ .menuli{
+ 	color: black; 
+ }
+
  .footerbox a{
  	color: white;
  }
@@ -56,6 +60,18 @@
  #catchphrase1{
  	font-size: 80px;
  	margin-bottom: 200px;
+ }
+
+ ul a{
+ 	color: black; 
+ }
+
+ a{
+ 	color: white;
+ }
+
+ a:hover{
+ 	color: white;
  }
 
  @media all and (min-width: 991px){
@@ -76,6 +92,7 @@
  		margin-right: 5px;
  		padding-left: 15px;
  		margin-top: 11px;
+ 		color: black; 
  	}
 
  	#catchphrase1{
@@ -90,7 +107,7 @@
  	}
 
  	.menuli{
- 		
+ 		color: black; 
  	}
 
  	#catchphrase1{
