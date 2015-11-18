@@ -21,8 +21,6 @@ class UsersController < ApplicationController
         redirect_to '/', notice: "We will get to you shortly"
       else
         render :new
-
-
     end
   end
 

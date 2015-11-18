@@ -57,3 +57,7 @@
 	* Additional javascript animations on page loads
 	* Check all resolusions aand media sizes
 	* Look into adding images as draggable
+
+### * Thank you's
+	* http://glyphicons.com/
+	* Interact.js
