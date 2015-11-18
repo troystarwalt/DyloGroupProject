@@ -48,8 +48,8 @@
 
 * Building
 	* Add additional shapes
-	* Update styling
-	* Paragraph explaing what the shit is
+	* [x] Update styling
+	* [x] Paragraph explaing what this function is...
 	* Javascript pop up for key
 
 * Wish List
