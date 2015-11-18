@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: "homes#index"
+
   get 'admins/index'
 
   get 'admins/show'
@@ -6,13 +8,6 @@ Rails.application.routes.draw do
   get 'admins/destroy'
 
   resources :users
-
-  get '/users', to: "users#index" 
-
-
-
-
-  get '/', to: "homes#index"
 
   get '/building', to: "homes#building"
 

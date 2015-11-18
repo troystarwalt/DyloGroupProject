@@ -10,8 +10,6 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
-
-	
 </head>
 <body>
 	<div class="container">
@@ -23,12 +21,13 @@
 				<li class="menuli"><a href="/#OurMission">About Us</a></li>
 				<li class="menuli"><a href="/#Contact">Contact</a></li>
 				<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
+				<li><%= link_to "See Users", users_path, class: => "menuli" %></li>
 			</ul>
 
-		</nav>
+			</nav>
 
-		<%= yield %>
+			<%= yield %>
 
-	</div>
-</body>
-</html>
+		</div>
+	</body>
+	</html>
