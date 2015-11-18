@@ -25,25 +25,25 @@
 
 #### To Do List
 * Main Page 
-	* Check 1000px resizing (photos) 
-	* Fix navigation at 1000px [x] 
-	* Contact Page Link to Form at Bottom (button to redirect to contact form) [x] 
-	* Make history one text size. [x] 
-	* Fix Nav Links to sit in line [x] 
+	* [ ] Check 1000px resizing (photos) 
+	* [x] Fix navigation at 1000px 
+	* [x] Contact Page Link to Form at Bottom (button to redirect to contact form) 
+	* [x] Make history one text size. 
+	* [x] Fix Nav Links to sit in line
 
 * Admin Login
 	* Add route 
 	* Add form 
 	* Upon logging, set with Admin privledges 
-	* Remove that link (admins login through a different portal) [x] 
+	* [x] Remove that link (admins login through a different portal) 
 
 * Admin Pages
-	* View users model information [x]  
+	* [x] View users model information  
 	* Delete and edit users  
 
 * User Pages
-	* Add user contact form [x] 
-	* Submitting the form will enter info into uses model [x] 
+	* [x] Add user contact form 
+	* [x] Submitting the form will enter info into uses model 
 	* Incorporate mandrill into form
 
 * Building
