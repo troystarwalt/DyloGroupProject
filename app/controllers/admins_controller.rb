@@ -12,7 +12,4 @@ class AdminsController < ApplicationController
   	@user= User.destroy
   end
 
-  
-
-
 end
