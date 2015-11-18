@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
 	<title>Dylo Design</title>
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= csrf_meta_tags %>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	
 </head>
 <body>
 	<div class="container">
 		<nav class="navbar">
 			<ul class="nav navbar-nav">
-				<li><%= link_to image_tag("logo.png", class: "img-repsonsive"), "/" %></li>
-				<li><a href="/#OurWork">Our Work</a></li>
-				<li><a href="/#OurHistory">History</a></li>
-				<li><a href="/#OurMission">About Us</a></li>
-				<li><a href="/#Contact">Contact</a></li>
-				<li><a href="/building">Dylo Kids Corner</a></li>
-				<li><a href="DyloLogin.html">Login</a></li> <!--To be hidden when not an admin -->
+				<li id="menulogo"><%= link_to image_tag("logo.png", class: "img-repsonsive"), "/" %></li>
+				<li class="menuli"><a href="/#OurWork">Our Work</a></li>
+				<li class="menuli"><a href="/#OurHistory">History</a></li>
+				<li class="menuli"><a href="/#OurMission">About Us</a></li>
+				<li class="menuli"><a href="/#Contact">Contact</a></li>
+				<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
 			</ul>
 
 		</nav>
