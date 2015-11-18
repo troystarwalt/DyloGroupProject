@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
 	<title>Dylo Design</title>
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= csrf_meta_tags %>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 	<div class="container">
@@ -21,13 +20,14 @@
 				<li><a href="/#OurMission">About Us</a></li>
 				<li><a href="/#Contact">Contact</a></li>
 				<li><a href="/building">Dylo Kids Corner</a></li>
-				<li><a href="DyloLogin.html">Login</a></li> <!--To be hidden when not an admin -->
-			</ul>
+				<li><a href="DyloLogin.html">Login</a></li><!--To be hidden when not an admin -->
+				<li><%= link_to "See Users", users_path %>
+				</ul>
 
-		</nav>
+			</nav>
 
-		<%= yield %>
+			<%= yield %>
 
-	</div>
-</body>
-</html>
+		</div>
+	</body>
+	</html>

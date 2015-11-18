@@ -1,15 +1,17 @@
-<h1>Users#new</h1>
-<p><%= form_for @user do |f| %></p>
-	<p><%= f.label :fname," First name" %></p>
+<h1>Request a Quote</h1>
+
+<%= form_for @user, :html => {:class => 'form-horizontal'} do |f| %>
+<div class="form-group">
+	<p><%= f.label :fname," First Name" %></p>
 	<p><%= f.text_field :fname%></p>
-	<p><%= f.label :lname, "Last name" %></p>
+	<p><%= f.label :lname, "Last Name" %></p>
 	<p><%= f.text_field :lname %></p>
 	<p><%= f.label :email %></p>
 	<p><%= f.email_field :email%></p>
 	<p><%= f.label :content %> </p>
-	<p><%= f.text_field :content %> </p>
-	<p><%= f.label :pnum, "Phone number" %></p>
+	<p><%= f.text_area :content %> </p>
+	<p><%= f.label :pnum, "Phone Number" %></p>
 	<p><%= telephone_field(:user, :pnum) %></p>
-
-<%= f.submit "submit your info here" %>
+	<%= f.submit "Submit", class: "btn btn-default"%>
+</div>
 <%end%>
