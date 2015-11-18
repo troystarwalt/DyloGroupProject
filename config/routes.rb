@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :users
 
+  get '/contact_us', to: "users#new"
+
   get '/building', to: "homes#building"
 
  
