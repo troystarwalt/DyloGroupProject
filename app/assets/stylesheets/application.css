@@ -32,3 +32,69 @@
  	width: 267px;
  	height: 50px;
  }
+
+ .portpoint{
+ 	list-style-type: none;
+ }
+
+ #catchphrase1{
+ 	font-size: 80px;
+ 	margin-bottom: 200px;
+ }
+
+ @media all and (min-width: 991px){
+
+ 	#menulogo{
+ 		background-color: #7BAD37;
+ 		margin-bottom: -22px;
+ 		margin-top: -15px;
+ 		margin-right: -15px;
+ 		margin-top: -7px;
+ 	}
+
+ 	#menulogo a:hover{
+ 		background-color: #7BAD37;
+ 	}
+
+ 	.menuli{
+ 		margin-right: 5px;
+ 		padding-left: 15px;
+ 		margin-top: 11px;
+ 	}
+
+ 	#catchphrase1{
+ 		font-size: 80px;
+ 		margin-bottom: 200px;
+ 	}
+ }
+
+ @media all and (max-width: 992px){
+ 	#menulogo{
+
+ 	}
+
+ 	.menuli{
+ 		
+ 	}
+
+ 	#catchphrase1{
+ 		font-size: 40px;
+ 	}
+
+ 	#menulogo a:hover{
+ 		background-color: #7BAD37;
+ 	}
+ }
+
+ @media all and (max-width: 600px){
+
+ 	#catchphrase1{
+ 		font-size: 20px;
+ 	}
+ }
+
+ @media all and (max-width: 767px){
+ 	#menulogo{
+ 		margin-right: -15px;
+ 	}
+ }
