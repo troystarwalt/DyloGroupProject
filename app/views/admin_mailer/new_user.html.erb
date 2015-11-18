@@ -1,0 +1,18 @@
+
+<div class="adminemail">
+We have received a new contact request.
+
+<hr>
+<h3>Name: <small><%= @user.fname %> <%= @user.lname %></small></h3>
+<h3>Email: <small><%= @user.email %></small></h3>
+<h3>Phone: <small><%= @user.pnum %></small></h3>
+<h3>Created On: <small><%= time_tag Time.now %></small></h3>
+
+<h3>Additional Information: <p><small><%= @user.content %></small></p></h3>
+<hr>
+<div><p>Please reach out to them as soon as possible.</p></div>
+
+<p>Thank you,</p>
+
+<p>Dylo Design Team</p>
+</div>
