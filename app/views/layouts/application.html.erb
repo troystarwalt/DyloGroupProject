@@ -38,35 +38,33 @@
 		<%= yield %>
 
 		<div class="row">
-			<div class="footerbox">
+		<div class="footerbox">
+			<div class="col-lg-3">
+				<h1>Site Map</h1>
+				<br>
+			</div>
+
+			<div class="col-lg-9">
 				<div class="col-lg-3">
-					<h1>Site Map</h1>
-					<br>
+					<p><a href="/#OurWork">Our Work</a></p>
+					<p><a href="/#OurHistory">History</a></p>
+					<p><a href="/#OurMission">About Us</a></p>
 				</div>
 
-				<div class="col-lg-3">
-					<!-- <div class="col-lg-9"> -->
-						<p><a href="/#OurWork">Our Work</a></p>
-						<p><a href="/#OurHistory">History</a></p>
-						<p><a href="/#OurMission">About Us</a></p>
-					</div>
-					</div>
-
-					<div class="col-lg-3">
-
-						<p><a href="/contact_us">Contact</a></p>
-						<p><a href="/building">Kids Corner</a></p>
-						<p><a href="/login">Admin Login</a></p>
-						<!-- <div class="col-lg-9"> -->
-						<% if admin_user %>
-						<p> <%= link_to ' logout',logout_path, method: :delete %></p>
-						<p><%= link_to " See Users", admins_index_path, :class => "menuli" %></p>
-						<% end %>
-					</div>
+				<div class="col-lg-6">
+					<p><a href="/contact_us">Contact</a></p>
+					<p><a href="/building">Kids Corner</a></p>
+					<p><a href="/login">Admin Login</a></p>
+					<% if admin_user %>
+					<p> <%= link_to 'logout',logout_path, method: :delete %></p>
+					<p><%= link_to "See Users", admins_index_path, :class => "menuli" %></p>
+<% end %>
 				</div>
 			</div>
-			<h4>&copy 2015, Marissa Sanders</h4>
 		</div>
+		<h4>&copy 2015, Marissa Sanders</h4>
 	</div>
+</div>
+	
 </body>
 </html>
