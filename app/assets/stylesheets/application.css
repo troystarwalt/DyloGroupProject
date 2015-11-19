@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require sweetalert.css
  *= require_self
  */
 
@@ -98,6 +99,10 @@
 
  a:hover{
  	color: white;
+ }
+
+ .user_check, .user_edit {
+    color: #7CAF23;
  }
 
  @media all and (min-width: 991px){

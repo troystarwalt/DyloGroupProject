@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+for i in 0..100
+ User.create(fname: "g", lname: "red", pnum: "1234567890", email: "m@map.com", content: "afdataetgdfaf")
+end

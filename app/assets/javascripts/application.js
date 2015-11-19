@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require interact.js
 //= require fulleffect.js
+//= require sweetalert.min.js
+//= require minor.js
 //= require_tree .

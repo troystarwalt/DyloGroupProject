@@ -39,24 +39,24 @@
 
 * Admin Pages
 	* [x] View users model information  
-	* [x]Delete and edit users  
+	* [x] Delete and edit users  
 
 * User Pages
 	* [x] Add user contact form 
 	* [x] Submitting the form will enter info into uses model 
-	* [x]Incorporate mandrill into form
+	* [x] Incorporate mandrill into form
 
 * Building
-	* [] Add additional shapes
-	* [] Update styling
+	* [ ] Add additional shapes
+	* [ ] Update styling
 	* [x] Paragraph explaing what the shit is
-	* [] Javascript pop up for key
+	* [ ] Javascript pop up for key
 
 * Wish List
-	* [] Portfolio for Each Picture
-	* [] Additional javascript animations on page loads
-	* [] Check all resolutions aand media sizes
-	* [] Look into adding images as draggable
+	* [ ] Portfolio for Each Picture
+	* [ ] Additional javascript animations on page loads
+	* [ ] Check all resolutions aand media sizes
+	* [ ] Look into adding images as draggable
 
 ###Thank you's
 * Great Resources
