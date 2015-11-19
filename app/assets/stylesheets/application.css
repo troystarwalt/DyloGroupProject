@@ -16,6 +16,7 @@
 
  body{
  	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ 	padding-top: 50px;
  }
 
  .captionbox{
@@ -39,19 +40,19 @@
  	text-align:center;
  }
 
- .menuli{
+/* .menuli{
  	color: black; 
- }
+ }*/
 
  .footerbox a{
  	color: white;
  }
 
 
- .img-repsonsive{
+/* .img-repsonsive{
  	width: 267px;
  	height: 50px;
- }
+ }*/
 
  .portpoint{
  	list-style-type: none;
@@ -61,6 +62,31 @@
  	font-size: 80px;
  	margin-bottom: 200px;
  }
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: -15px;
+    display: block;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.scroll-indicator {
+    width: 20px;
+    height: 20px;
+    margin: 11px auto;
+    border-right: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    border-bottom-right: 2px;
+    transform: rotate(45deg);
+}
 
  ul a{
  	color: black; 
@@ -88,12 +114,12 @@
  		background-color: #7BAD37;
  	}
 
- 	.menuli{
+/* 	.menuli{
  		margin-right: 5px;
  		padding-left: 15px;
  		margin-top: 11px;
  		color: black; 
- 	}
+ 	}*/
 
  	#catchphrase1{
  		font-size: 80px;
@@ -106,9 +132,9 @@
 
  	}
 
- 	.menuli{
+/* 	.menuli{
  		color: black; 
- 	}
+ 	}*/
 
  	#catchphrase1{
  		font-size: 40px;
@@ -124,6 +150,7 @@
  	#catchphrase1{
  		font-size: 20px;
  	}
+
  }
 
  @media all and (max-width: 767px){
