@@ -15,10 +15,10 @@ ActiveRecord::Schema.define(version: 20151118171713) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email"
+    t.string   "password"
     t.string   "password_digest"
-    t.string   "password_confirmation"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "homes", force: :cascade do |t|

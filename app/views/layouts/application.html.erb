@@ -15,16 +15,29 @@
 	<div class="container">
 		<nav class="navbar">
 			<ul class="nav navbar-nav">
+				<% if current_user %>
+
+					<li class="menuli"><%= current_user.email %></li>
+					<li class="menuli"> <%= link_to 'logout',logout_path, method: :delete %></li>
+					<li class="menuli"><%= link_to "See Users", admins_index_path, :class => "menuli" %></li>
+					<% else %>
+		
 				<li id="menulogo"><%= link_to image_tag("logo.png", class: "img-repsonsive"), "/" %></li>
 				<li class="menuli"><a href="/#OurWork">Our Work</a></li>
 				<li class="menuli"><a href="/#OurHistory">History</a></li>
 				<li class="menuli"><a href="/#OurMission">About Us</a></li>
 				<li class="menuli"><a href="/#Contact">Contact</a></li>
 				<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
-				<li><%= link_to "See Users", users_path, :class => "menuli" %></li>
+				<% end %>
+				
+			
+			
 			</ul>
-
 		</nav>
+
+		<%= flash[:notice] if flash[:notice] %>
+	<%= flash[:alert] if flash[:alert] %>
+
 
 		<%= yield %>
 
@@ -45,7 +58,7 @@
 					<div class="col-lg-6">
 						<p><a href="/contact_us">Contact</a></p>
 						<p><a href="/building">Kids Corner</a></p>
-						<p><a href="##">Admin Login</a></p>
+						<p><a href="/login">Admin Login</a></p>
 					</div>
 				</div>
 			</div>

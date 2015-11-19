@@ -2,17 +2,13 @@ class SessionsController < ApplicationController
   def new
   end
 
-  def show
-
-
-  end
-
   def create
-  	@admin= Admin.find_by(email: params[:session][:email])
+  	@admin= Admin.find_by(email: params[:email])
 
   	if @admin 
+  		session[:admin_id] = @admin.id
   		# log_in admins_index
-  		redirect_to '/admins/index'
+  		redirect_to '/admins/index', notice:'your in '
   	else 
   		flash[:alert] = " Please try again"
   	redirect_to '/login'
@@ -22,7 +18,7 @@ class SessionsController < ApplicationController
 
   def destroy
   	session[:admin_id] = nil
-   redirect_to '/' ,flash[:notice] ="Logged out"
+   redirect_to root_path
   end
 
 
