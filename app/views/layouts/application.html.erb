@@ -32,18 +32,18 @@
 					<li class="menuli"><a href="/#OurMission">About Us</a></li>
 					<li class="menuli"><a href="/#Contact">Contact</a></li>
 					<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
-					<li><%= link_to "See Users", users_path, :class => "menuli" %></li>
 				</ul>
 			</div>
 		</div>		
 	</nav>
-	<div class="container">
+
+	<%= yield %>
+	
 
 		
 
 
-	<%= yield %>
-
+<div class="container">
 	<div class="row">
 		<div class="footerbox">
 			<div class="col-lg-3">
@@ -62,14 +62,13 @@
 				<div class="col-lg-6">
 					<p><a href="/contact_us">Contact</a></p>
 					<p><a href="/building">Kids Corner</a></p>
-
 					<p><a href="/login">Admin Login</a></p>
 					<% if admin_user %>
 					<p> <%= link_to 'logout',logout_path, method: :delete %></p>
 					<p><%= link_to "See Users", admins_index_path, :class => "menuli" %></p>
 <% end %>
 
-					<p><a href="##">Admin Login</a></p>
+					
 
 				</div>
 			</div>
