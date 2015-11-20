@@ -40,7 +40,8 @@ class UsersController < ApplicationController
     user_set
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_path }
+      format.html { redirect_to users_path, status: 303 }
+
     end
   end
 

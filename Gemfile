@@ -54,3 +54,5 @@ gem 'pry-rails'
 gem 'mandrill-rails'
 
 gem 'mandrill-api'
+
+gem 'sweetalert-rails'
