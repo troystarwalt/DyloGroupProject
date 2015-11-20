@@ -32,9 +32,9 @@
 	* [x] Fix Nav Links to sit in line
 
 * Admin Login
-	* [ ] Add route 
-	* [ ] Add form 
-	* [ ] Upon logging, set with Admin privledges 
+	* [x] Add route 
+	* [x] Add form 
+	* [x] Upon logging, set with Admin privledges 
 	* [x] Remove that link (admins login through a different portal) 
 
 * Admin Pages
@@ -52,10 +52,18 @@
 	* [x] Paragraph explaing what the shit is
 	* [ ] Javascript pop up for key
 
+* Testing
+	* [ ] Admins Controller
+	* [ ] Admin Model
+	* [ ] Users Controller
+	* [ ] User Model
+	* [ ] Sessions Controller
+	* [ ] Home Controller
+
 * Wish List
-	* [ ] Portfolio for Each Picture
+	* [x] Portfolio for Each Picture
 	* [ ] Additional javascript animations on page loads
-	* [ ] Check all resolutions aand media sizes
+	* [x] Check all resolutions aand media sizes
 	* [ ] Look into adding images as draggable
 
 ###Thank you's
@@ -63,3 +71,5 @@
 	* http://glyphicons.com/
 	* Interact.js
 	* Bootstrap
+	* Vivus
+	* SweetAlerts
