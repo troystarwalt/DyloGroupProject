@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   get 'admins/destroy'
 
+  get '/login', to: "sessions#new"
+  post '/login', to: "sessions#create"
+  delete '/logout', to: "sessions#destroy"
+
   resources :users
 
   get '/contact_us', to: "users#new"

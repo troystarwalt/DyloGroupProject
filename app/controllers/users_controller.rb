@@ -5,11 +5,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+   user_set
   end
 
   def edit
-    @user = User.find(params[:id])
+   user_set
   end
 
   def new
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
+    user_set
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_path, status: 303 }
@@ -46,6 +46,11 @@ class UsersController < ApplicationController
   end
 
   private
+
+  def user_set
+    
+     @user = User.find(params[:id])
+  end
 
   def user_params
     params.require(:user).permit(:fname, :lname, :email, :pnum, :content)
