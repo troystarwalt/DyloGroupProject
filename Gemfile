@@ -39,6 +39,9 @@ group :development, :test do
   gem 'byebug'
   gem 'faker'
   gem 'fabrication'
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem "factory_girl_rails"
   
 end
 
