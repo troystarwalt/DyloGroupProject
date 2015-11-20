@@ -62,6 +62,8 @@ GEM
     erubis (2.7.0)
     excon (0.45.4)
     execjs (2.6.0)
+    fabrication (2.14.1)
+    faker (1.5.0)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
@@ -191,6 +193,8 @@ DEPENDENCIES
   bootstrap
   byebug
   coffee-rails (~> 4.1.0)
+  fabrication
+  faker
   database_cleaner
   factory_girl_rails
   jbuilder (~> 2.0)
