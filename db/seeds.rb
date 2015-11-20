@@ -6,7 +6,33 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+require 'faker'
 
-for i in 0..100
- User.create(fname: "g", lname: "red", pnum: "1234567890", email: "m@map.com", content: "afdataetgdfaf")
+User.destroy_all
+Admin.destroy_all
+
+50.times do |index|
+User.create!(
+ 	fname: Faker::Name.first_name, 
+ 	lname: Faker::Name.last_name,
+ 	pnum: "1234567849",
+ 	email: Faker::Internet.email,
+ 	content: Faker::Lorem.paragraph)
 end
+
+Admin.create(
+	email: "troy.starwalt@gmail.com",
+	password: "slayer"
+	)
+
+Admin.create(
+	email: "tan_vil@hotmail.com",
+	password: "123456"
+	)
+
+Admin.create(
+	email: "jbardliving@gmail.com",
+	password: "12345"
+	)
+
+p "Created #{User.count} users"
