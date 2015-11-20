@@ -1,58 +1,36 @@
-<h1>Become an Architect</h1>
-<h3>Hey Kids, ever wondered what being a Dylo Design Architect is like, it easy!</h3>
+<script type="text/javascript">
+	swal({
+		title: 'Instructions',
+		text: 'Click and Drag Shapes.<p>Buld you favorite building.</p><p>Resize the shapes.</p><p>Hit refesh to start over.</p><p>Refres the page to see these instructions again.</p>',
+		type: 'info',
+		confirmButtonColor: '#7DAE22',
+		confirmButtonText: 'Build It',
+		allowOutsideClick: 'true',
+		animation: 'slide-from-top',
+		html: true,
+		timer: 100
+	});
 
-<p>Want to build the next greatest skyscraper or train station? Now's your chance!</p>
+</script>
+<h1 class="kids_header">Hey! <small>Ever wondered what being a Dylo Design Architect is like?</small></h1>
 
 <p>Click and Drag the centers of the Shapes and drag it to the gray box to make your own building. You can also click and drag the lines of the shapes to resize the shapes!</p>
 
 <div id="building" class="cf">
-	<div id="toy-chest" class="starting_point col-md-3">
-		<p class="toy-description">Lines</p>
-		<div id="short-line-1" class="drag-noresize"></div>
-		<div id="short-line-2" class="drag-noresize"></div>
-		<div id="short-line-3" class="drag-noresize"></div>
-		<div id="short-line-4" class="drag-noresize"></div>
-		<div id="short-line-5" class="drag-noresize"></div>
-		<div id="short-line-6" class="drag-noresize"></div>
-		<div id="short-line-7" class="drag-noresize"></div>
-		<div id="medium-line-1" class="drag-noresize"></div>
-		<div id="medium-line-2" class="drag-noresize"></div>
-		<div id="medium-line-3" class="drag-noresize"></div>
-		<div id="medium-line-4" class="drag-noresize"></div>
-		<div id="medium-line-5" class="drag-noresize"></div>
-		<div id="medium-line-6" class="drag-noresize"></div>
-		<div id="medium-line-7" class="drag-noresize"></div>
-		<div id="long-line-1" class="drag-noresize"></div>
-		<div id="long-line-2" class="drag-noresize"></div>
-		<div id="long-line-3" class="drag-noresize"></div>
-		<div id="long-line-4" class="drag-noresize"></div>
-		<div id="long-line-5" class="drag-noresize"></div>
-		<div id="long-line-6" class="drag-noresize"></div>
-		<div id="long-line-7" class="drag-noresize"></div>
-		<p class="toy-description">Squares</p>
-		<div id="square-1" class="draggable"></div>
-		<div id="square-2" class="draggable"></div>
-		<div id="square-3" class="draggable"></div>
-		<div id="square-4" class="draggable"></div>
-		<div id="square-5" class="draggable"></div>
-		<div id="square-6" class="draggable"></div>
-		<p class="toy-description">Circles</p>
-		<div id="circle-1" class="draggable"></div>
-		<div id="circle-2" class="draggable"></div>
-		<div id="circle-3" class="draggable"></div>
-		<div id="circle-4" class="draggable"></div>
-		<div id="circle-5" class="draggable"></div>
-		<div id="circle-6" class="draggable"></div>
+	<div class="row">
+		<div id="toy-chest" class="starting_point col-md-5 col-lg-4">
+			<%= render "shapes" %>
+		</div>
+		<div id="parents" class="dropzone col-md-7 col-lg-8">
+			<h3 class="build-here">Build It Here</h3>
+			<div id="playground" class="dropzone"></div>
+		</div>
 	</div>
-	<div id="parents" class="dropzone col-md-9">
-		<h3 class="build-here">Build It Here</h3>
-		<div id="playground" class="dropzone col-md-12 col-sm-12 col-xs-12"></div>
+	<div>
+		<button type="button" class="btn btn-default pull-right" aria-label="Refresh">
+			<a href="/building"><span class="glyphicon glyphicon-refresh" aria-hidden="false" style="color:black;"></span></a>
+		</button>
+		<br>
+		<br>
 	</div>
-</div>
-<div>
-	<button type="button" class="btn btn-default pull-right" aria-label="Refresh">
-		<a href="/building"><span class="glyphicon glyphicon-refresh" aria-hidden="false" style="color:black;">Refresh</a></span>
-	</button>
-	<br>
-	<br>
 </div>

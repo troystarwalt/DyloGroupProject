@@ -23,18 +23,19 @@
 #toy-chest {
 	background-color: #a7f4fe;
 	height: 602px;
+	background-image: url("geometry2.png");
 
 	.toy-description {
 		text-align: center;
-		font-size: 1.1em;
-		font-style: italic;
+		font-size: 1.8em;
+		font-family: 'Coming Soon', cursive;
 	}
 
 	#short-line-1, #short-line-2,#short-line-3, #short-line-4, #short-line-5, #short-line-6, #short-line-7 {
 		height: 100px;
 		width: 2px;
-		background-color: blue;
-		margin: 0 1px;
+		background-color: #FF686B;
+		margin: 0 3px;
 		display: inline-block;
 		@translate(0px, 0px);
 	}
@@ -42,8 +43,8 @@
 	#medium-line-1, #medium-line-2,#medium-line-3, #medium-line-4, #medium-line-5, #medium-line-6, #medium-line-7 {
 		height: 150px;
 		width: 2px;
-		background-color: blue;
-		margin: 0 1px;
+		background-color: #FF686B;
+		margin: 0 2px;
 		display: inline-block;
 		@translate(0px, 0px);
 	}
@@ -51,8 +52,8 @@
 	#long-line-1, #long-line-2,#long-line-3, #long-line-4, #long-line-5, #long-line-6, #long-line-7{
 		height: 200px;
 		width: 2px;
-		background-color: blue;
-		margin: 0 1px;
+		background-color: #FF686B;
+		margin: 0 2px;
 		display: inline-block;
 		@translate(0px, 0px);
 	}
@@ -74,7 +75,7 @@
 	#square-1, #square-2, #square-3, #square-4, #square-5, #square-6 {
 		height: 50px;
 		width: 50px;
-		border: 2px blue solid;
+		border: 2px #FF686B solid;
 		display: inline-block;
 		@translate(0px, 0px);
 	}
@@ -83,7 +84,7 @@
 		height: 50px;
 		width: 50px;
 		border-radius: 50%;
-		border: 2px blue solid;
+		border: 2px #FF686B solid;
 		display: inline-block;
 		@translate(0px, 0px);
 	}
@@ -114,18 +115,24 @@
 	position: absolute;
 }
 
+.kids_header {
+	font-family: 'Coming Soon', cursive;
+}
+
 #parents {
-	background-color: white;
 	height: 600px;
 	border: 1px dashed grey;
 	z-index: -2;
+	background-image: url("geometry2.png");
+
 
 	.build-here {
 		text-align: center;
+		font-family: 'Coming Soon', cursive;
 	}
 
 	#playground  {
-		background-color: grey;
+		background-color: rgba(165, 255, 215, 0.3);
 		height: 500px;
 		z-index: -1;
 	}
