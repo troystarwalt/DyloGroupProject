@@ -20,8 +20,12 @@
 				<td><%= user.email %></td>
 				<td><%= user.pnum %></td>
 				<td><%= user.content %></td>
-				<td><%= link_to 'Edit', edit_user_path(user) %></td>
-				<td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are Your Sure?' } %></td>
+				<td><button>
+					<%= link_to 'Edit', edit_user_path(user), class: "user_edit" %>
+				</button></td>
+				<td><button>
+					<%= link_to 'Delete', user, remote: true, class: "user_check", id: "user_delete"%>
+				</button></td>
 			</tr>
 			<% end %>
 		</tbody>	
