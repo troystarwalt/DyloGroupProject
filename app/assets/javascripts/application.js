@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require interact.js
-//= require fulleffect.js
-//= require sweetalert.min.js
-//= require minor.js
+//= require interact.min
+//= require fulleffect
+//= require sweetalert.min
+//= require minor
 //= require_tree .

@@ -23,6 +23,18 @@ interact('.draggable')
     	}
 	})
 
+	.gesturable({
+		onmove: function(event){
+			var shapes = document.getElementByClassName('draggable');
+
+			angle += event.da;
+
+			shape.style.webkitTransform =
+			shape.style.transform = 
+				'rotate(' + angle + 'deg)';
+		}
+	})
+
 	.resizable({
 		preserveAspectRatio: false,
 		edges: {left: true, right: true, bottom: true, top: true},

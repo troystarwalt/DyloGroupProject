@@ -25,7 +25,7 @@
 
 #### To Do List
 * Main Page 
-	* [ ] Check 1000px resizing (photos) 
+	* [x] Check 1000px resizing (photos) 
 	* [x] Fix navigation at 1000px 
 	* [x] Contact Page Link to Form at Bottom (button to redirect to contact form) 
 	* [x] Make history one text size. 
@@ -48,14 +48,14 @@
 
 * Building
 	* [ ] Add additional shapes
-	* [ ] Update styling
+	* [x] Update styling
 	* [x] Paragraph explaing what the shit is
-	* [ ] Javascript pop up for key
+	* [x] Javascript pop up for key
 
 * Testing
-	* [ ] Admins Controller
+	* [x] Admins Controller
 	* [ ] Admin Model
-	* [ ] Users Controller
+	* [x] Users Controller
 	* [ ] User Model
 	* [ ] Sessions Controller
 	* [ ] Home Controller
