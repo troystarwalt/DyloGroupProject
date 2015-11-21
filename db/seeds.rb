@@ -11,7 +11,7 @@ require 'faker'
 User.destroy_all
 Admin.destroy_all
 
-50.times do |index|
+2.times do |index|
 User.create!(
  	fname: Faker::Name.first_name, 
  	lname: Faker::Name.last_name,
