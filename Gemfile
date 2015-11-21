@@ -57,6 +57,6 @@ gem 'pry-rails'
 
 gem 'mandrill-rails'
 
-gem 'mandrill-api'
+gem 'mandrill-api', require: "mandrill"
 
 gem 'sweetalert-rails'
