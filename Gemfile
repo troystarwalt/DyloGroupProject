@@ -34,15 +34,15 @@ gem 'bootstrap'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'faker'
-  gem 'fabrication'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem "factory_girl_rails"
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  
 end
 
 group :development do
@@ -50,14 +50,19 @@ group :development do
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end
 
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
+
 end
 
+gem 'rails_12factor'
+
 gem 'pry-rails'
+
+gem 'puma'
 
 gem 'mandrill-rails'
 

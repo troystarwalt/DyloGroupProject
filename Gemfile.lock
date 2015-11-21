@@ -62,7 +62,6 @@ GEM
     erubis (2.7.0)
     excon (0.45.4)
     execjs (2.6.0)
-    fabrication (2.14.1)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
@@ -104,6 +103,7 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
+    puma (2.14.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -201,7 +201,6 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   database_cleaner
-  fabrication
   factory_girl_rails
   faker
   jbuilder (~> 2.0)
@@ -210,6 +209,7 @@ DEPENDENCIES
   mandrill-rails
   pg
   pry-rails
+  puma
   rails (= 4.2.4)
   rails_12factor
   rspec-rails
