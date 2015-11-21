@@ -1,16 +1,18 @@
+
 development:
-  adapter: postgresql
-  database: my_database_development
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
   timeout: 5000
+
 test:
-  adapter: postgresql
-  database: my_database_test
+  adapter: sqlite3
+  database: db/test.sqlite3
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
-  database: my_database_production
+  database: my_production_database
   pool: 5
   timeout: 5000
