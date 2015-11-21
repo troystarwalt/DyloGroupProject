@@ -11,7 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
- *= require sweetalert.css
+ *= require sweetalert
  *= require_self
  */
 
@@ -41,19 +41,11 @@
  	text-align:center;
  }
 
-/* .menuli{
- 	color: black; 
- }*/
 
  .footerbox a{
  	color: white;
  }
 
-
-/* .img-repsonsive{
- 	width: 267px;
- 	height: 50px;
- }*/
 
  .portpoint{
  	list-style-type: none;
@@ -138,7 +130,7 @@
 }
 }
 
-@media all and (min-width: 640px & max-width: 1049px){
+@media all and (min-width: 640px) and (max-width: 1049px){
     .carousel-caption #catchphrase1{
     font-size: 45px;
     margin-bottom: 150px;
