@@ -20,7 +20,7 @@
 	<title>Dylo Design</title>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,12 +32,17 @@
 				<%= link_to image_tag("logo.png", class: "navbar-brand img-responsive"), "/" %>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav navbar-left">
 					<li class="menuli"><a href="/#OurWork">Our Work</a></li>
 					<li class="menuli"><a href="/#OurHistory">History</a></li>
 					<li class="menuli"><a href="/#OurMission">About Us</a></li>
 					<li class="menuli"><a href="/#Contact">Contact</a></li>
 					<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				<% if admin_user %>
+					<li><a>Logged In As: <%= admin_user.email %></a></li>
+					<% end %>
 				</ul>
 			</div>
 		</div>		
@@ -72,7 +77,7 @@
 					<div class="col-lg-3">
 						<% if admin_user %>
 						<p> <%= link_to 'Logout',logout_path, method: :delete %></p>
-						<p><%= link_to "See Users", admins_index_path, :class => "menuli" %></p>
+						<p><%= link_to "See Users", admins_index_path, :class => "menuli" %></p>				
 						<% end %>
 					</div>
 				</div>
