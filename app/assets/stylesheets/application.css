@@ -94,8 +94,25 @@ a:hover{
     color: white;
 }
 
-.user_check, .user_edit {
+.user_edit {
     color: #7CAF23;
+}
+
+.btn-danger {
+    height: 25px;
+}
+
+.social-div {
+    padding: 0;
+}
+
+.social-bar {
+        position: fixed;
+        right: 15px;
+        top: 60px;
+        z-index: 1;
+        background-color: #7CAF23;
+        opacity: .4;
 }
 
 @media all and (max-width: 641px){
@@ -105,7 +122,9 @@ a:hover{
     html{
         max-width: 630px
     }
+
 }
+
 
 @media all and (max-width: 1050px){
     .carousel-caption #catchphrase1{
@@ -127,6 +146,7 @@ a:hover{
         text-align: center;
         margin-bottom: 100px;
     }
+
 }
 
 @media all and (max-width: 440px){
@@ -138,12 +158,17 @@ a:hover{
     .scroll {
         margin-bottom: 275px;
     }
+
 }
 
 @media all and (min-width: 640px) and (max-width: 1049px){
     .carousel-caption #catchphrase1{
         font-size: 45px;
         margin-bottom: 150px;
+    }
+
+    .social-bar {
+        display: none;
     }
 }
 
@@ -152,6 +177,7 @@ a:hover{
         font-size: 30px;
         margin-bottom: 100px;
     }
+
 }
 
 @media all and (min-width: 991px){
@@ -172,6 +198,7 @@ a:hover{
         font-size: 80px;
         margin-bottom: 200px;
     }
+
 }
 
 @media all and (max-width: 992px){
@@ -186,6 +213,8 @@ a:hover{
     #menulogo a:hover{
         background-color: #7BAD37;
     }
+
+
 }
 
 @media all and (max-width: 600px){
