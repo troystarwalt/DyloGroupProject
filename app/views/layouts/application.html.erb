@@ -40,18 +40,27 @@
 					<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-				<% if admin_user %>
-					<li><a>Logged In As: <%= admin_user.email %></a></li>
+					<% if admin_user %>
+					<li><p class = "navbar-text navbar-link">Signed in as <%= admin_user.email %></p></li>
 					<% end %>
 				</ul>
 			</div>
 		</div>		
 	</nav>
+	<div class="social-bar dropdown">
+	<button class= "btn btn-default dropdown-toggle" data-toggle="dropdown">
+			Share
+			<span class="caret"></span>
+		</button>
+			<ul class="dropdown-menu">
+				<li><%= link_to image_tag("facebook-gray.png", class: "social-img"), "###", class: "social-img-link" %></li>
+				<li><%= link_to image_tag("pinterest-gray.png", class: "social-img"), "###" %></li>
+				<li><%= link_to image_tag("twitter-gray.png", class: "social-img"), "###" %></li>
+			</ul>
+	</div>
 	<div class="container">
 
 		<%= yield %>
-
-
 
 		<% flash[:notice] if flash[:notice] %>
 		<% flash[:alert] if flash[:alert] %>
