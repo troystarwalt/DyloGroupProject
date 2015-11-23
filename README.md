@@ -30,6 +30,8 @@
 	* [x] Contact Page Link to Form at Bottom (button to redirect to contact form) 
 	* [x] Make history one text size. 
 	* [x] Fix Nav Links to sit in line
+	* [ ] Add fixed social bar
+	* [ ] Add flash notices
 
 * Admin Login
 	* [x] Add route 
@@ -59,6 +61,10 @@
 	* [ ] User Model
 	* [ ] Sessions Controller
 	* [ ] Home Controller
+
+* Misc
+	* [x] Push to Heroku
+	* [x] Incorporate Mandrill API
 
 * Wish List
 	* [x] Portfolio for Each Picture
