@@ -97,6 +97,15 @@
     color: #7CAF23;
  }
 
+@media all and (max-width: 641px){
+    body{
+        max-width: 630px
+    }
+    html{
+        max-width: 630px
+    }
+}
+
 @media all and (max-width: 1050px){
     .carousel-caption #catchphrase1{
         font-size: 40px;
