@@ -5,6 +5,12 @@
 </div>
 <div class="text-center">
 <%= form_for @user, :html => {:class => 'form-horizontal'} do |f| %>
+<% if @user.errors.any? %>
+	<% @user.errors.each do |attr,msg| %>
+		<p><%= msg%> </p>
+	<% end %> 
+<% end %>
+	
 <div class="form-group">
 	<%= f.label :fname," First Name", class: "col-sm-2 control-label" %>
 	<div class="col-sm-6">
