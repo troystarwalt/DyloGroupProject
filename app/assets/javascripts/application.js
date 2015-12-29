@@ -16,5 +16,6 @@
 //= require interact.min
 //= require fulleffect
 //= require sweetalert.min
+//= require homes
 //= require minor
 //= require_tree .

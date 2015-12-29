@@ -10,9 +10,7 @@ class AdminMailer < ActionMailer::Base
 		template_name = "dylo-design"
 		template_content = []
 		message = {
-			to: [{email: "troy.starwalt@gmail.com"},
-				{email: "tan_vil@hotmail.com"},
-				{email: "jbardliving@gmail.com"}
+			to: [{email: "troy.starwalt@gmail.com"}
 				],
 			subject: "New Quote Request From: #{user.email}",
 			merge_vars: [
@@ -29,6 +27,3 @@ class AdminMailer < ActionMailer::Base
 	end
 
 end
-
-# Add admin emails on this page. Format "email1; email2; email3; etc..."
-# Current admins: tan_vil@hotmail.com; jbardliving@gmail.com

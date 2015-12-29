@@ -5,12 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
+# Only for development
 require 'faker'
 
 User.destroy_all
 Admin.destroy_all
 
+# Used in development only.
 2.times do |index|
 User.create!(
  	fname: Faker::Name.first_name, 
@@ -23,16 +24,6 @@ end
 Admin.create(
 	email: "troy.starwalt@gmail.com",
 	password: "slayer"
-	)
-
-Admin.create(
-	email: "tan_vil@hotmail.com",
-	password: "123456"
-	)
-
-Admin.create(
-	email: "jbardliving@gmail.com",
-	password: "12345"
 	)
 
 p "Created #{User.count} users"
