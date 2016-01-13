@@ -1,11 +1,11 @@
-<div class="row">
+<div class="row" id="/">
   <div class="col-lg-12">  
     <div>
       <div class="carousel-caption">
-        <h2 id="catchphrase1" style="margin-top:-250px; display:none">If we build it, they'll come, and stay.</h2>
-        <div class="scroll">
+        <h2 id="catchphrase1" style="margin-top:-250px; display:none">DYLO DESIGN</h2>
+        <div class="scroll hidden hidden-xs hidden-sm">
           <a href="/#OurHistory">   
-            <div class="scroll-indicator"></div>
+            <div class="scroll-indicator" id="scroll-down"></div>
           </a>
         </div>
       </div>
@@ -21,31 +21,31 @@
 <!--  Start Work 0 -->
 
 <div class="row">
- <div class="col-lg-6">
-   <div class="carousel-caption">
-    <a href="" data-toggle="modal" data-target="#crystalbuildings"><h2 class="projecttext">The Crystal Buildings</h2></a>
+  <div class="col-lg-6 col-md-6">
+    <div class="carousel-caption">
+      <a href="" data-toggle="modal" data-target="#crystalbuildings"><h2 class="projecttext">The Crystal Buildings</h2></a>
+    </div>
+    <%= image_tag "sky15.jpg", class: "img-responsive" %>
   </div>
-  <%= image_tag "sky15.jpg", class: "img-responsive" %>
-</div>
-<div class="col-lg-6">
-  <div class="carousel-caption">
-    <a href="" data-toggle="modal" data-target="#curvesofrome"><h2 class="projecttext">The Curves of Rome</h2></a>
+  <div class="col-lg-6 col-md-6">
+    <div class="carousel-caption">
+      <a href="" data-toggle="modal" data-target="#curvesofrome"><h2 class="projecttext">The Curves of Rome</h2></a>
+    </div>
+    <%= image_tag "sky8.jpg", class: "img-responsive" %>
   </div>
-  <%= image_tag "sky8.jpg", class: "img-responsive" %>
-</div>
 </div>
 
 <!--  End Work 0 -->
 
 <!-- Work 1 -->
 
-<div class="row">
+<div class="row" id="OurWork">
   <div class="col-lg-12">
-    <h1 class="captionbox"><a name="OurWork"></a>Our Work</h1>
+    <h1 class="captionbox">Our Work</h1>
   </div>  
 </div>
 <div class="row">
-  <div class="col-lg-6 " style="padding:25px">
+  <div class="col-lg-6  col-md-6" style="padding:25px">
     <ul>
       <h2>
         <li class="portpoint">Westley Bank HQ</li>
@@ -57,7 +57,7 @@
     </ul>
   </div>
 
-  <div class="col-lg-6" style="padding:25px">
+  <div class="col-lg-6 col-md-6" style="padding:25px">
     <ul>
       <h2>
         <li class="portpoint">Margrine Building</li>
@@ -73,10 +73,10 @@
 <!--  End Work 1 -->
 
 <!--  Begin History -->
-<div class="container">
+<div id="OurHistory">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="captionbox"><a name="OurHistory"></a>Our History</h1>
+      <h1 class="captionbox">Our History</h1>
     </div>
   </div>
 
@@ -113,20 +113,20 @@
 <!--  End History -->
 
 <!--  Start Motto and Work 2 -->
-<div class="row">
+<div class="row" id="OurMission">
   <div class="col-lg-12">
-    <h1 class="captionbox"><a name="OurMission"></a>About Our Mission</h1>
+    <h1 class="captionbox">About Our Mission</h1>
   </div>
 </div>
 <div class="row">
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-md-6">
     <%= image_tag "sky4.jpg", class: "img-responsive" %>
     <div class="carousel-caption">
       <a href="" data-toggle="modal" data-target="#shipsky"><h2 class="projecttext">The Ship of the Sky</h2></a>
     </div>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-md-6">
     <%= image_tag "sky14.jpg", class: "img-responsive" %>
     <div class="carousel-caption">
       <a href="" data-toggle="modal" data-target="#haleyinstitute"><h2 class="projecttext">Haley Insitute</h2></a>
@@ -141,14 +141,14 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6">
       <%= image_tag "sky9.jpg", class: "img-responsive" %>
       <div class="carousel-caption">
         <a href="" data-toggle="modal" data-target="#skyminos"><h2 class="projecttext">The SkyTower of Minos</h2></a>
       </div>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6">
       <%= image_tag "sky1.jpg", class: "img-responsive" %>
       <div class="carousel-caption">
         <a href="" data-toggle="modal" data-target="#museum"><h2 class="projecttext">Alam Architecural Museum</h2></a>
@@ -159,15 +159,13 @@
   <!--  End Motto and Work 2 -->
 
   <!--  Start Contact -->
-  <div class="row">
+  <div class="row" id="Contact">
     <div class="col-lg-12 col-md-12 col-sm-12">
-      <h1 class="captionbox"><a name="Contact"></a>Want to talk to us?</h1>
+      <h1 class="captionbox">Want to talk to us?</h1>
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-1">  
-    </div>
-    <div class="col-lg-5 col-md-5">
+    <div class="col-lg-6 col-md-6">
       <br>
       <h4>What we need from the client:</h4>
       <ul>
@@ -180,19 +178,16 @@
       </ul> 
       <br>
     </div>
-    <div class="col-lg-5">
+    <div class="col-lg-6 col-md-6">
       <h1>Lets Chat!</h1>
       <p>Click Here to be redirected to a contact form.</p>
       <a class="btn btn-default btn-lg" href="/contact_us" roll="button">Contact Us</a>
       <br>
     </div>
-    <div class="col-lg-1">  
-    </div>
   </div>
 
   <!-- Portfolio Comments -->
   <div>
-
     <div class="modal fade" id="crystalbuildings" tabindex="-1" role="dialog" aria-labelledby="crystalbuildings" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">

@@ -19,7 +19,7 @@
 	<%= csrf_meta_tags %>
 	<title>Dylo Design</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -33,32 +33,35 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-left">
-					<li class="menuli"><a href="/#OurWork">Our Work</a></li>
-					<li class="menuli"><a href="/#OurHistory">History</a></li>
-					<li class="menuli"><a href="/#OurMission">About Us</a></li>
-					<li class="menuli"><a href="/#Contact">Contact</a></li>
+					<li class="menuli"><a href="/#OurWork" data-target="#OurWork">Our Work</a></li>
+					<li class="menuli"><a href="/#OurHistory"  data-target="#OurHistory">History</a></li>
+					<li class="menuli"><a href="/#OurMission" data-target="#OurMission">About Us</a></li>
+					<li class="menuli"><a href="/#Contact" data-target="#Contact">Contact</a></li>
 					<li class="menuli"><a href="/building">Dylo Kids Corner</a></li>
 				</ul>
+				<% if admin_user %>
 				<ul class="nav navbar-nav navbar-right">
-					<% if admin_user %>
+					
 					<li><p class = "navbar-text navbar-link">Signed in as <%= admin_user.email %></p></li>
-					<% end %>
+					<li><%= link_to "See Users", admins_index_path, :class => "menuli" %></li>	
+					<li><%= link_to 'Logout',logout_path, method: :delete %></li>
 				</ul>
+				<% end %>
 			</div>
 		</div>		
 	</nav>
 	<div class="social-bar dropdown">
-	<button class= "btn btn-default dropdown-toggle" data-toggle="dropdown">
+		<button class= "btn btn-default dropdown-toggle" data-toggle="dropdown">
 			Share
 			<span class="caret"></span>
 		</button>
-			<ul class="dropdown-menu">
-				<li><%= link_to image_tag("facebook-gray.png", class: "social-img"), "###", class: "social-img-link" %></li>
-				<li><%= link_to image_tag("pinterest-gray.png", class: "social-img"), "###" %></li>
-				<li><%= link_to image_tag("twitter-gray.png", class: "social-img"), "###" %></li>
-			</ul>
+		<ul class="dropdown-menu">
+			<li><%= link_to image_tag("facebook-gray.png", class: "social-img"), "###", class: "social-img-link" %></li>
+			<li><%= link_to image_tag("pinterest-gray.png", class: "social-img"), "###" %></li>
+			<li><%= link_to image_tag("twitter-gray.png", class: "social-img"), "###" %></li>
+		</ul>
 	</div>
-	<div class="container">
+	<div class="container-fluid">
 
 		<%= yield %>
 
@@ -69,25 +72,19 @@
 		<div class="row">
 			<div class="footerbox">
 				<div class="col-lg-12">
-					<div class="col-lg-2">
+					<div class="col-lg-4 col-md-4">
 						<h2>Site Map</h2>
 						<p id="copyright">&copy 2015, JTT Designs</p>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-4 col-md-4">
 						<p><a href="/#OurWork">Our Work</a></p>
 						<p><a href="/#OurHistory">History</a></p>
 						<p><a href="/#OurMission">About Us</a></p>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-4 col-md-4">
 						<p><a href="/contact_us">Contact</a></p>
 						<p><a href="/building">Kids Corner</a></p>
 						<p><a href="/"></a>Home</p>
-					</div>
-					<div class="col-lg-3">
-						<% if admin_user %>
-						<p> <%= link_to 'Logout',logout_path, method: :delete %></p>
-						<p><%= link_to "See Users", admins_index_path, :class => "menuli" %></p>				
-						<% end %>
 					</div>
 				</div>
 			</div>
